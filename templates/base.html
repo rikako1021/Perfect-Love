@@ -1,0 +1,28 @@
+<html lang="ja">
+
+<head>
+    <!-- <link rel=”stylesheet” href="{{ url_for('static', filename='native.css') }}"> -->
+     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡告白練習♡</title>
+    {% block head %}{% endblock %}
+</head>
+
+<body style="position: relative;">
+    {% block body %}{% endblock %}
+    <iframe src="../static/silence.mp3" allow="autoplay" id="audio" style="display:none">
+    </iframe>
+    <audio autoplay loop>
+        <source src="../static/start.MP3" type="audio/mp3"> 
+    </audio>
+        <a href="/" style="margin-left: 40px; position:absolute;
+        top: 670;
+        left: 0;">
+            <img src = "{{url_for('static', filename='audio.png')}}" style="width: 15%;">
+        </a>
+</body>
+
+</html>

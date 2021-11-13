@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" 
+style="display:block; 
+margin: 0%;
+padding: 0%;
+text-align: center; 
+padding-top: 30px; 
+padding-bottom: 55px;
+font-family: vdl-gigajr;
+font-weight: 500;
+max-width: 100%;
+background-color: #fccfe0;">
+    <h1>あなたの告白結果</h1> 
+    <div style="max-width: 100%; text-align: center; display: block; padding: 0%;">
+        <div class="card-body" style="padding: 0%; padding-bottom: 6px; margin-top:30px; position: relative;">
+        <a style="text-align: center;">
+        <img 
+        src = "{{url_for('static', filename='ギャル選択2.png')}}" 
+        style="text-align: center; width: 100%;">
+        </a>
+        <!-- <div style="position: relative;"></div> -->
+        <!-- <div style="position: absolute; 
+        top: 420;
+        left: 120;"> -->
+        <div class = "col-4">
+          <div class="card w-30 mb-3" style="background-color: rgba(255,255,255,0.8);
+        position: absolute;
+        top: 10%;
+        left: 62%;
+        padding: 5%;
+        font-weight: 10%;"
+        >
+          <h1>RESULT</h1>
+          <h4>あなたの告白セリフ：<br>{{ text }}</h4>
+          <br/>
+          <h4>セリフの点数：{{ result.point * 25 }}</h4>
+          <h4>表情の点数：{{ f_point }}</h4>
+        </div>
+        </div>
+            <h2 style="position: absolute; 
+            top: 81%;
+            left: 14%;
+            max-width: 70%;">
+            {{ result.result_text }}
+        </h2>
+        
+        <a href="/" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 200%;
+        position: absolute;
+        top: 78%;
+        left: 70%;">
+トップに戻る</a>
+    </div>
+</div>
+</div>
+{% endblock %}

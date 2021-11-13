@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" 
+style="display:block; 
+margin: 0%;
+padding: 0%;
+text-align: center; 
+padding-top: 30px; 
+padding-bottom: 40px;
+font-family: vdl-gigajr;
+font-weight: 500;
+max-width: 100%;
+background-color: #fccfe0;">
+    <h1>告白相手選択</h1>
+    <div style="position: relative; margin-top: 30px;">
+    <a style="text-align: center; margin-top: 30px;">
+        <img 
+        src = "{{url_for('static', filename='選択背景.png')}}" 
+        style="text-align: center; width: 100%;">
+    </a>
+    <div class="row" style="max-width: 95%; position: absolute; top: 10%; left: 3.5%; text-align: center;">
+        
+    <div class = "col-4">
+    <div class="card w-100 mb-3" style="max-width: 100%; padding: 5%; background-color: rgba(255,255,255,0.8)">
+        <div class="card-body">
+        <img 
+        src = "{{url_for('static', filename='ギャル選択.png')}}" 
+        style="width: 60%; margin: auto;">
+        <h2 class="card-title" style="text-align: center; margin: 5%;">
+            成瀬　ヒカリ
+        </h2>
+        <p style="font-size: 120%;">
+        愛星高校3年　ダンス部部長<br/>いつもハキハキして元気百倍！
+        </p>
+        </div>
+        <a href="/fem1" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 200%;">
+        選択</a>
+    </div>
+    </div>
+
+    <div class = "col-4">
+    <div class="card w-100 mb-3" style="max-width: 100%; padding: 5%; background-color: rgba(255,255,255,0.8)">
+        <div class="card-body">
+        <img 
+        src = "{{url_for('static', filename='ぶりっ子選択.png')}}" 
+        style="width: 60%; margin: auto;">
+        <h2 class="card-title" style="text-align: center; margin: 5%;">
+            河合　リコ
+        </h2>
+        <p style="font-size: 120%;">
+        愛星高校1年　サッカー部マネージャー<br/>男子から絶大な人気を得ている女子
+        </p>
+        </div>
+        <a href="/fem2" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 200%;">
+選択</a>
+    </div>
+    </div>
+
+    <div class = "col-4">
+    <div class="card w-100 mb-3" style="max-width: 100%; padding: 5%; background-color: rgba(255,255,255,0.8)">
+        <div class="card-body">
+        <img 
+        src = "{{url_for('static', filename='優等生選択.png')}}" 
+        style="width: 60%; margin: auto;">
+        <h2 class="card-title" style="text-align: center; margin: 5%;">
+            石川　京香
+        </h2>
+        <p style="font-size: 120%;">
+        愛星高校2年　テストの成績は学年1番<br/>誰からも信頼される生徒会書記
+        </p>
+        </div>
+        <a href="/fem3" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 200%;">
+選択</a>
+    </div>
+    </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}

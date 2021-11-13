@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" 
+style="display:block; 
+margin: 0%;
+padding: 0%;
+text-align: center; 
+padding-top: 30px; 
+padding-bottom: 55px;
+font-family: vdl-gigajr;
+font-weight: 500;
+max-width: 100%;
+background-color: #fccfe0;">
+    <h1>告白画面</h1> 
+    <div style="max-width: 100%; text-align: center; display: block; padding: 0%;">
+        <div class="card-body" style="padding: 0%; padding-bottom: 6px; margin-top:30px; position: relative;">
+        <a style="text-align: center;">
+        <img 
+        src = "{{url_for('static', filename='ギャル選択2.png')}}" 
+        style="text-align: center; width: 100%;">
+        </a>
+        <!-- <div style="position: relative;"></div> -->
+        <!-- <div style="position: absolute; 
+        top: 420;
+        left: 120;"> -->
+            <h2 class="card-title" 
+            style="position: absolute; 
+            top: 73%;
+            left: 130;">
+                成瀬　ヒカリ
+            </h2>
+            <h4 style="position: absolute; 
+            top: 81%;
+            left: 16%;
+            ">
+            な、なに........？急に、話があるって.......
+        </h4>
+        
+        <a href="/recording" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 200%;
+        position: absolute;
+        top: 78%;
+        left: 75%;">
+告白する</a>
+    </div>
+</div>
+</div>
+{% endblock %}

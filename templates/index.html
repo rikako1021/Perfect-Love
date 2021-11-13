@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" style="margin: auto; padding-top:5%; font-family: vdl-gigajr;
+font-weight: 500;">
+<p style="margin-left: 20%; margin-bottom: 5%;">
+    <img src = "{{url_for('static', filename='logo1.png')}}" style="width: 65%;">
+</p>
+    <div class="col text-center">
+        <img src = "{{url_for('static', filename='フロー.png')}}" style="width: 90%;">
+    <div style="margin: 4%;"></div>
+    <a href="/select" class="btn" role="button"
+  style="background-color:#F2A7C4; 
+        padding: 3%; padding-top: 1%; 
+        padding-bottom: 1%; 
+        color: white; 
+        font-size: 170%;">
+START</a>
+    </div>
+
+</div>
+{% endblock %}
