@@ -39,7 +39,7 @@ $ pip install cv2
 
 ### APIの利用手続き
 #### Speech-to-Text API
-* [Google Cloud Platform]("https://console.cloud.google.com")にてアカウントを作成
+* [Google Cloud Platform](https://console.cloud.google.com)にてアカウントを作成
 * プロジェクトの作成
 * 「APIとサービス」の「ライブラリ」からSpeech to Textを選択し、APIを有効にする
 * 認証情報の作成
@@ -48,7 +48,7 @@ $ pip install cv2
 * ```$ pip install –upgrade google-cloud-speech```
 
 #### Microsoft Azure Face API
-* [公式サイト]("https://azure.microsoft.com/ja-jp/services/cognitive-services/face/#overview")に入り、Face APIについてのページが表示されるので「無料で始める」を押す
+* [公式サイト](https://azure.microsoft.com/ja-jp/services/cognitive-services/face/#overview)に入り、Face APIについてのページが表示されるので「無料で始める」を押す
 * Azureのアカウントを作成後
 * 「すべてのサービス」から```Cognitive Service```と検索し、選択して「追加」をクリック →「Marketplace」のページに移動
 * 「Face」と検索し、「作成」をクリック
@@ -60,6 +60,6 @@ $ pip install cv2
 を入力し、クライアントライブラリをインストールする必要がある。
 
 #### メタデータ 高精度ネガポジAPI
-* [こちら]("http://ap.mextractr.net/ma9/ma9signup")からメタデータ株式会社のAPI利用登録を行います。
+* [こちら](http://ap.mextractr.net/ma9/ma9signup)からメタデータ株式会社のAPI利用登録を行います。
 
 利用登録終了後、指定したメールアドレスにてメガデータ株式会社からAPIキーが送られくるため、メールに従ってプログラムを記述することでAPIを活用する環境を構築することができる。
