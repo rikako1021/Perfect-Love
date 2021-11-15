@@ -39,7 +39,7 @@ $ pip install cv2
 
 ### APIの利用手続き
 #### Speech-to-Text API
-* [Google Cloud Platform]("https://console.cloud.google.com/home")にてアカウントを作成
+* [Google Cloud Platform]("https://console.cloud.google.com")にてアカウントを作成
 * プロジェクトの作成
 * 「APIとサービス」の「ライブラリ」からSpeech to Textを選択し、APIを有効にする
 * 認証情報の作成
