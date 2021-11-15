@@ -26,7 +26,7 @@ $ env\Scripts\activate
 
 ### ライブラリのインストール
 ``` 
-pip install flask flask-sqlalchemy 
+$ pip install flask flask-sqlalchemy 
 
 # 音声認識に必要なライブラリ
 $ pip install pyaudio
